@@ -70,6 +70,17 @@
 
 ![picture](pic/vagrant_05.png)
 
+После установки vagrant и перезагрузки ПК выполняем проверку установленной версии .
+
+        vagrant version
+
+![picture](pic/vagrant_w_02.png)
+
+Выводим функциональные возможности vagrant по созданию и управлению ВM
+    
+    vagrant --help
+    
+![picture](pic/vagrant_w_01.png)
 
 
 ##### Работа Vagrant + Oracle Virtual Box для быстрого создания стендов c ВМ
