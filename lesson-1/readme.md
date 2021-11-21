@@ -50,6 +50,25 @@
 
 
 ##### Установка и настройка Vagrant 
+Шаг 1.
+
+![picture](pic/vagrant_01.png)
+
+Шаг 2.
+
+![picture](pic/vagrant_02.png)
+
+Шаг 3.
+
+![picture](pic/vagrant_03.png)
+
+Шаг 4.
+
+![picture](pic/vagrant_04.png)
+
+Шаг 5.
+
+![picture](pic/vagrant_05.png)
 
 
 
