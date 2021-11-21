@@ -162,9 +162,11 @@ vagrant / vagrant
 После перезагрузки ВМ можно подключиться через GUI
 
 Для этого через иконку на рабочем столе 
+
 ![picture](pic/vagrant_w_08.png)
 
 Открыть интерфейс Oracle Virtual Box
+
 ![picture](pic/vagrant_w_09.png)
 
 B двойным щелчком мыши открыть графический вход в ВМ.
