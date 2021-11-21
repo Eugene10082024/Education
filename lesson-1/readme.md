@@ -1,11 +1,10 @@
 ### Урок 1 Установка и настройка Linux
 #### Расссматриваемые вопросы.
 
-    1. Установка и настройка Oracle Virtual Box
-    2. Установка Linux из iso образа в  ВМ под управлением Oracle Virtual Box
-    3. Основная настройка Linux
-    4. Установка и настройка Vagrant 
-    5. Работа Vagrant + Oracle Virtual Box для быстрого создания стендов c ВМ
+    1. Установка и настройка Astra Linux CE из iso образа в  ВМ под управлением Oracle Virtual Box
+    2. Установка и настройка Oracle Virtual Box
+    3. Установка и настройка Vagrant 
+    4. Работа Vagrant + Oracle Virtual Box для быстрого создания стендов c ВМ
 
 ##### Установка и настройка Oracle Virtual Box
 Шаг 1.
@@ -40,11 +39,16 @@
 
 ![picture](pic/oracle_vb_08.png)
 
-##### Установка Linux из iso образа в  ВМ под управлением Oracle Virtual Box
+##### Установка и настройка Linux из iso образа в  ВМ под управлением Oracle Virtual Box
 
+Скачать iso Astra Linux CE можно c - https://download.astralinux.ru/astra/stable/orel/iso/
 
+###### Дейстия проводимые на Oracle Virtual Box Для запуска установки.
 
-##### Основная настройка Linux
+###### Установка Astra Linux 
+
+Установка описана в документе - https://astralinux.ru/products/astra-linux-common-edition/documents-astra-ce/instrukcziya-po-ustanovke-os-astra-linux-common-edition.pdf стр 13.
+
 
 
 
