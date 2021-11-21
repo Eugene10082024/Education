@@ -9,16 +9,27 @@
 
 ##### Установка и настройка Oracle Virtual Box
 Шаг 1.
+
 ![picture](pic/oracle_vb_01.png)
+
 Шаг 2.
+
 ![picture](pic/oracle_vb_02.png)
+
 Шаг 3.
+
 ![picture](pic/oracle_vb_03.png)
+
 Шаг 4.
+
 ![picture](pic/oracle_vb_04.png)
+
 Шаг 5.
+
 ![picture](pic/oracle_vb_05.png)
+
 Шаг 6.
+
 ![picture](pic/oracle_vb_06.png)
 
 При первом входе желательно задать местонахождение файлов ВМ, чтобы потом с ними было проще работать.
