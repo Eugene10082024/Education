@@ -82,5 +82,12 @@
     
 ![picture](pic/vagrant_w_01.png)
 
+Для нормальной работы дополнительного функционала используемого в конфигурационных файлах Vagrantfile необходимо установить plugin vagrant-vbguest
+
+Для этого выполняем команду.
+        
+        vagrant install vagrant-vbguest
+
+![picture](pic/vagrant_w_03.png)
 
 ##### Работа Vagrant + Oracle Virtual Box для быстрого создания стендов c ВМ
