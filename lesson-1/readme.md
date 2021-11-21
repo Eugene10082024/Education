@@ -11,17 +11,19 @@
 
 ![picture](pic/oracle_vb_01.png)
 
-[picture](pic/oracle_vb_02.png)
+![picture](pic/oracle_vb_02.png)
 
-[picture](pic/oracle_vb_03.png)
+![picture](pic/oracle_vb_03.png)
 
-[picture](pic/oracle_vb_04.png)
+![picture](pic/oracle_vb_04.png)
 
-[picture](pic/oracle_vb_05.png)
+![picture](pic/oracle_vb_05.png)
 
-[picture](pic/oracle_vb_06.png)
+![picture](pic/oracle_vb_06.png)
 
-[picture](pic/oracle_vb_07.png)
+![picture](pic/oracle_vb_07.png)
+
+![picture](pic/oracle_vb_08.png)
 
 ##### Установка Linux из iso образа в  ВМ под управлением Oracle Virtual Box
 
