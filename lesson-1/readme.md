@@ -6,7 +6,7 @@
     3. Установка и настройка Vagrant 
     4. Работа Vagrant + Oracle Virtual Box для быстрого создания стендов c ВМ
 
-##### Установка и настройка Oracle Virtual Box
+#### Установка и настройка Oracle Virtual Box
 Шаг 1.
 
 ![picture](pic/oracle_vb_01.png)
@@ -39,7 +39,7 @@
 
 ![picture](pic/oracle_vb_08.png)
 
-##### Установка и настройка Linux из iso образа в  ВМ под управлением Oracle Virtual Box
+#### Установка и настройка Linux из iso образа в  ВМ под управлением Oracle Virtual Box
 
 Скачать iso Astra Linux CE можно c - https://download.astralinux.ru/astra/stable/orel/iso/
 
@@ -51,7 +51,7 @@
 
 
 
-##### Установка и настройка Vagrant 
+#### Установка и настройка Vagrant 
 Шаг 1.
 
 ![picture](pic/vagrant_01.png)
@@ -92,11 +92,9 @@
 
 ![picture](pic/vagrant_w_03.png)
 
-##### Работа Vagrant + Oracle Virtual Box для быстрого создания стендов c ВМ.
+#### Работа Vagrant + Oracle Virtual Box для быстрого создания стендов c ВМ.
 
-В основны работы Vagrant погружаться не будем. О этом можно прочитать на сайте 
-
-https://www.vagrantup.com/
+В основы работы Vagrant погружаться не будем. О этом можно прочитать на сайте https://www.vagrantup.com/
 
 Для проверения первого этапа обучения подготовлены 2 Vagrantfile c Astra Linux CE.
 
