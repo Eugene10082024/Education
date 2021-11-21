@@ -9,7 +9,7 @@
 
 ##### Установка и настройка Oracle Virtual Box
 
-
+![picture](pic/oracle_vb_01.png)
 
 
 
