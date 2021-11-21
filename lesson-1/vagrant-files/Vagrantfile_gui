@@ -1,0 +1,51 @@
+# -*- mode: ruby -*-
+# vim: set ft=ruby :
+
+MACHINES = {
+  :astrace01=> {
+	  :box_name => "rta/orelgui",
+        :ip_addr => '192.168.11.250'
+  }
+ }
+
+Vagrant.configure("2") do |config|
+	config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+	config.vm.box_check_update = false
+		MACHINES.each do |boxname, boxconfig|
+			config.vm.define boxname do |box|
+			box.vm.box = boxconfig[:box_name]
+			box.vm.host_name = boxname.to_s
+			box.vbguest.installer_options = { allow_kernel_upgrade: true }
+			box.vm.network "private_network", ip: boxconfig[:ip_addr]
+			box.vm.provider :virtualbox do |vb|
+				vb.customize ["modifyvm", :id, "--memory", "2048"]
+            end
+			box.vm.provision "shell", inline: <<-SHELL
+				mkdir -p ~root/.ssh
+				cp ~vagrant/.ssh/auth* ~root/.ssh
+				sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config;
+				systemctl restart sshd;
+
+				sudo adduser superuser > /dev/null 2>&1
+				sudo echo "superuser:Superuser54321" | chpasswd > /dev/null 2>&1
+                sudo usermod -aG astra-admin superuser > /dev/null 2>&1
+                sudo usermod -aG astra-console superuser > /dev/null 2>&1
+
+			SHELL
+			end
+		end
+
+#    config.vm.provision "ansible" do |ansible|
+#		ansible.playbook = "provisioning/master-mysql.yml"
+#        ansible.playbook = "provisioning/slave-mysql.yml"
+#		ansible.become = "true"
+#	end 
+        
+	config.vm.define "astrace01" do |astrace01|
+		
+        	astrace01.vm.provision "shell", inline: <<-SHELL
+
+       SHELL
+ end
+
+end
