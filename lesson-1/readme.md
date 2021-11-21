@@ -86,7 +86,7 @@
 
 Для этого выполняем команду.
         
-        vagrant install vagrant-vbguest
+        vagrant plugin install vagrant-vbguest
 
 ![picture](pic/vagrant_w_03.png)
 
