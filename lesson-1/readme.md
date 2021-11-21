@@ -98,28 +98,72 @@
 
 https://www.vagrantup.com/
 
-Для проверения первого этапа обучения подготовлены 2 Vagrantfile.
+Для проверения первого этапа обучения подготовлены 2 Vagrantfile c Astra Linux CE.
 
+1. Vagrantfile_gui - файл позволяющий развернуть ВМ c графическим интерфейсом
 
 https://github.com/Aleksey-10081967/Education/blob/main/lesson-1/vagrant-files/Vagrantfile_gui
 
+2. Vagrantfile_gui - файл позволяющий развернуть ВМ c графическим интерфейсом
+
 https://github.com/Aleksey-10081967/Education/blob/main/lesson-1/vagrant-files/Vagrantfile_nogui
 
+Порядок действий следующий.
 
+Шаг 1.
+
+На ПК создается каталог в котором будет лежать Vagrantfile + создаться служебный каталог .vagrant для работы ВМ развернытых с помощью Vagrant.
+(Например С:\vagrant\Astra_GUI\)
+
+Шаг 2. 
+В созданный каталог копируем файл Vagrantfile_gui и желательного переименовываем его в Vagrantfile
+
+Шаг 3.
+Запускаем cmd и переходим в каталог СС:\vagrant\Astra_GUI\
+
+    cd С:\vagrant\Astra_GUI\
+    
+Шаг 4.
+Выполняем команду создания ВМ с помощью vagrant
+    
+    vagrant up
+
+После первого запуска в начале vagrant загрует box file c ОС Asta c сайта - https://app.vagrantup.com/boxes/search
+
+Это может занять значительное время. Проверить выполнение загрузки можно через Диспетчер задач - Производительность
 
 ![picture](pic/vagrant_w_04.png)
 
+Ниже показан скрин-шот завершения создания ВМ. Если появились ошибки надо разбираться.
+
 ![picture](pic/vagrant_w_05.png)
 
+После успешного создания ВМ можно к ней подключиться по ssh.
+    
+    vagrant ssh
+    
+Подключение выполняется под пользователм vagrant зфыыцщкв vagrant
 ![picture](pic/vagrant_w_06.png)
 
-![picture](pic/vagrant_w_07.png)
+После первого подключения по ssh к ВМ настоятельно рекомендую сделать reboot BM.
+    
+    sudo init 6
 
+После перезагрузки ВМ можно подключиться через GUI
+
+Для этого через иконку на рабочем столе 
 ![picture](pic/vagrant_w_08.png)
 
+Открыть интерфейс Oracle Virtual Box
 ![picture](pic/vagrant_w_09.png)
 
+B двойным щелчком мыши открыть графический вход в ВМ.
+
+Пользователь входа: vagrant password:vagrant
+
 ![picture](pic/vagrant_w_10.png)
+
+При развертывании ВМ дополнительно создается пользователь 
 
 
 
