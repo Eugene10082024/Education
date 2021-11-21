@@ -101,6 +101,9 @@ https://www.vagrantup.com/
 Для проверения первого этапа обучения подготовлены 2 Vagrantfile.
 
 
+https://github.com/Aleksey-10081967/Education/blob/main/lesson-1/vagrant-files/Vagrantfile_gui
+
+https://github.com/Aleksey-10081967/Education/blob/main/lesson-1/vagrant-files/Vagrantfile_nogui
 
 
 
