@@ -1,4 +1,3 @@
 # Обучение
 
-Занятие 1 Установка и настройка Linux
-[Занятие 1](https://github.com/Aleksey-10081967/HomeWork/tree/main/HW-lesson-01)
+[Занятие 1 Установка и настройка Astra Linux CE](https://github.com/Aleksey-10081967/Education/tree/main/lesson-1)
