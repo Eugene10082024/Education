@@ -65,9 +65,15 @@
 
 #### Установка Astra Linux 
 
+![picture](pic/vm_inst_01.png)
+
+![picture](pic/vm_inst_02.png)
+
+![picture](pic/vm_inst_03.png)
+
+![picture](pic/vm_inst_04.png)
+
 Установка описана в документе - https://astralinux.ru/products/astra-linux-common-edition/documents-astra-ce/instrukcziya-po-ustanovke-os-astra-linux-common-edition.pdf стр 13.
-
-
 
 ### Установка и настройка Vagrant 
 Шаг 1.
