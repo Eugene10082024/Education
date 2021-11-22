@@ -73,6 +73,8 @@
 
 ![picture](pic/vm_inst_04.png)
 
+![picture](pic/vm_inst_06.png)
+
 Установка описана в документе - https://astralinux.ru/products/astra-linux-common-edition/documents-astra-ce/instrukcziya-po-ustanovke-os-astra-linux-common-edition.pdf стр 13.
 
 ### Установка и настройка Vagrant 
