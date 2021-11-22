@@ -43,7 +43,23 @@
 
 Скачать iso Astra Linux CE можно c - https://download.astralinux.ru/astra/stable/orel/iso/
 
-##### Дейстия проводимые на Oracle Virtual Box Для запуска установки.
+##### Создание пустой ВМ для установки Astra Linux CE.
+
+![picture](pic/vm_cr_01.png)
+
+![picture](pic/vm_cr_02.png)
+
+![picture](pic/vm_cr_03.png)
+
+![picture](pic/vm_cr_04.png)
+
+![picture](pic/vm_cr_05.png)
+
+![picture](pic/vm_cr_06.png)
+
+![picture](pic/vm_cr_07.png)
+
+![picture](pic/vm_cr_08.png)
 
 ##### Установка Astra Linux 
 
