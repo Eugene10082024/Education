@@ -1,5 +1,57 @@
 ## Работа с ssh сервером
+SSH это протокол, использующий клиент-серверную модель для аутентификации удаленных систем и обеспечения шифрования данных, обмен которыми происходит в рамках удаленного доступа.
+По умолчанию для работы протокола используется TCP-22 порт: на нем сервер (хост) ожидает входящее подключение и, после получения команды и проведения аутентификации, организует запуск клиента, открывая выбранную пользователем оболочку. При необходимости пользователь может менять используемый порт.
+Для создания SSH подключения клиент должен инициировать соединение с сервером, обеспечив защищенное соединение и подтвердив свой идентификатор (проверяются соответствие идентификатора с предыдущими записями, хранящимися в RSA-файле, и личные данные пользователя, необходимые для аутентификации). 
 
+#### Проверка работающего ssh сервера.
+
+                        root@astra-01:~# sysytemctl status sshd
+                        -bash: sysytemctl: команда не найдена
+                        root@astra-01:~# systemctl status sshd
+                        ● ssh.service - OpenBSD Secure Shell server
+                           Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+                           Active: active (running) since Wed 2021-11-24 15:45:06 MSK; 1h 12min ago
+                         Main PID: 773 (sshd)
+                            Tasks: 1 (limit: 4915)
+                           CGroup: /system.slice/ssh.service
+                                   └─773 /usr/sbin/sshd -D
+
+                        ноя 24 15:45:09 astra-01 sshd[773]: Server listening on :: port 22.
+                        ноя 24 15:45:09 astra-01 systemd[1]: Reloading OpenBSD Secure Shell server.
+                        ноя 24 15:45:09 astra-01 sshd[773]: Received SIGHUP; restarting.
+                        ноя 24 15:45:09 astra-01 systemd[1]: Reloaded OpenBSD Secure Shell server.
+                        ноя 24 15:45:09 astra-01 sshd[773]: Server listening on 0.0.0.0 port 22.
+                        ноя 24 15:45:09 astra-01 sshd[773]: Server listening on :: port 22.
+                        ноя 24 15:47:22 astra-01 sshd[1461]: Accepted password for administrator from 10.60.32.55 port 51987 ssh2
+                        ноя 24 15:47:22 astra-01 sshd[1461]: pam_kiosk2(sshd:session): No administrator profile found, trying common profile
+                        ноя 24 15:47:22 astra-01 sshd[1461]: pam_kiosk2(sshd:session): No common profile found, further processing stopped
+                        ноя 24 15:47:22 astra-01 sshd[1461]: pam_unix(sshd:session): session opened for user administrator by (uid=0)
+            
+Если сервиса нет его надо установить, если не работает - запустить.
+
+#### Конфигурационный файл: /etc/ssh/ssh_config
+Перед звапуском нужно проверить параметр PasswordAuthentication. Значение данного параметра должно быть -  yes. Для разрешения входа по ssh по паролю.
+
+            PasswordAuthentication yes
+            
+#### Поключение к удаланному ПК
+            ssh <login>@<IP ПК>
+            ssh administrator@10.0.31.72
+            
+##### Подключение к удаленному ПК без пароля:
+            
+1. Создание ключа пользователя:
+            
+            ssh-keygen -t rsa
+            
+2. Передача публичного ключа на удаленный ПК
+            
+            ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
+            ssh-copy-id -i ~/.ssh/id_rsa.pub administrator@10.0.31.72
+            
+ 3. Подключение к удаленному ПК через ыыр
+            
+            ssh administrator@10.0.31.72
 
 ## Файловая система Linux
 Файловая систе́ма — порядок, определяющий способ организации, хранения и именования данных на носителях информации в компьютерах.
@@ -238,12 +290,4 @@
             deluser - удаляет пользователя 
             
             useradd, userdel, usermod, groupadd, groupdel, groupmod - низко уровневные утилиты для работы с пользователями и группами
-            
-### Работа с архивами
-
-
-
-
-
-
-
+       
