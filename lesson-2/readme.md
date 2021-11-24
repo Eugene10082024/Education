@@ -64,6 +64,24 @@
 
 ### Свойства файла.
 
+            administrator@astra-01:~$ pwd
+            /home/administrator
+            administrator@astra-01:~$ ls -al
+            итого 188
+            drwxr-x--- 19 administrator administrator  4096 ноя 24 15:45 .
+            drwxr-xr-x  5 root          root           4096 сен 16 12:15 ..
+            -rw-------  1 administrator administrator   149 сен 16 12:47 .bash_history
+            -rw-r--r--  1 administrator administrator   220 сен 16 11:18 .bash_logout
+            -rw-r--r--  1 administrator administrator  3526 сен 16 11:18 .bashrc
+            drwxr-xr-x  5 administrator administrator  4096 сен 29 15:25 .cache
+            drwxr-xr-x  9 administrator administrator  4096 сен 30 09:37 .config
+            drwx------  3 administrator administrator  4096 сен 16 11:30 .dbus
+            lrwxrwxrwx  1 administrator administrator    17 ноя 24 15:45 Desktop -> Desktops/Desktop1
+            drwx------  6 administrator administrator  4096 сен 16 11:30 Desktops
+            -rw-r--r--  1 administrator administrator   141 сен 16 11:30 .directory
+            -rw-------  1 administrator administrator    22 сен 16 11:30 .dmrc
+            drwx------  6 administrator administrator  4096 ноя 24 15:45 .fly
+
 #### Имена файлов и папок.
 
 в Linux ограничены длинной в 256 символов и запретом на / (слеш). Отдельно следует упомянуть о символах . (точка) и ~ (тильда), точка перед именем файла или директории добавляют ему атрибут "скрытый", а тильда после имени добавляет атрибут "архивный" и также делает файл скрытым. Например, .file - скрытый файл, а file~ - архивный.
@@ -73,6 +91,10 @@
 #### Разширение файла
 
 В Windows тип файла полностью определяется его расширением, от которого также зависит дальнейшее поведение системы при работе с таким файлом. Все знают, что для того, чтобы скрипт мог запускаться, ему нужно присвоить расширение bat или cmd. В Linux поведение системы в отношении того или иного файла зависит от его типа, а для возможности запуска файл должен иметь установленный атрибут "исполняемый".
+
+#### Владелец файла и папок
+
+В Linux у каждого файла и каждого каталога есть два владельца: пользователь и группа. Эти владельцы устанавливаются при создании файла или каталога. Пользователь, который создаёт файл становится владельцем этого файла, а первичная группа, в которую входит этот же пользователь, так же становится владельцем этого файла
 
 #### Права доступа
 
