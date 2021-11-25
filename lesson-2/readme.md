@@ -206,6 +206,9 @@ SSH это протокол, использующий клиент-сервер�
 
 [Горячие клавищи shell](https://github.com/Aleksey-10081967/Education/tree/main/lesson-2/keyword_shell.md)
 
+[Запуск нескольких команд в shell](https://github.com/Aleksey-10081967/Education/tree/main/lesson-2/start-command.md)
+
+
 ### Работа в man
 
                         Раздел	Содержание
