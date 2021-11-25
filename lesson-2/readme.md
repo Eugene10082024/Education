@@ -208,6 +208,8 @@ SSH это протокол, использующий клиент-сервер�
 
 [Запуск нескольких команд в shell](https://github.com/Aleksey-10081967/Education/tree/main/lesson-2/start-command.md)
 
+[Запуск исполняемых bash-скриптов](https://github.com/Aleksey-10081967/Education/tree/main/lesson-2/start-bash.md)
+
 
 ### Работа в man
 
