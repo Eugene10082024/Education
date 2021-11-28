@@ -451,7 +451,7 @@ WCPU — усредненное значение CPU
 COMMAND — команда, запустившая процесс.
 
 #### Утилита htop
-
+![picture](dop_files/htop.png)
 
 
 
