@@ -128,4 +128,46 @@ The time the unit takes to start is printed after the "+" character.
 
 Для задач управления сервисами предназначены юнит-файлы с суффиксом .service. Однако в большинстве случаев суффикс .service можно опустить, так как система systemd достаточно умна, чтобы без суффикса определить, что нужно делать при использовании команд управления сервисом.
 
-#### 
+#### Основные команды управления сервисами
+
+Запуск сервиса, где application имя сервиса. (например - nginx)
+
+      sudo systemctl start nginx.service
+       
+Остановка сервиса.
+
+      sudo systemctl stop nginx.service
+       
+Перезапуск сервиса       
+
+      sudo systemctl restart  nginx.service
+       
+Перезагрузка конфигурационных файлов сервиса
+
+      sudo systemctl reload nginx.service
+              
+Добавление сервиса в автозагрузку
+
+      sudo systemctl enable nginx.service
+       
+Удаление сервиса из автозагрузки
+
+       sudo systemctl disable nginx.service
+
+Проверка статуса сервиса
+
+       sudo systemctl status
+       
+Запрос списка текущих юнитов systemd       
+
+       sudo systemctl list-units
+
+фильтр –type=. Он позволяет отфильтровать юниты по типу
+
+       systemctl list-units --type=service
+       
+Systemd может блокировать юнит  (автоматически или вручную), создавая симлинк на /dev/null. Это называется маскировкой юнитов и выполняется командой mask.
+
+       sudo systemctl mask nginx.service
+       
+Теперь сервис Nginx не будет запускаться автоматически или вручную до тех пор, пока включена маскировка.
