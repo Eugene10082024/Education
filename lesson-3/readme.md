@@ -326,19 +326,21 @@ The time the unit takes to start is printed after the "+" character.
 #### Утилита ps.
 ps (processes status — статус процессов) — это встроенная утилита Unix/Linux для просмотра информации, касающейся выбора запущенных процессов в системе: она считывает эту информацию из виртуальных файлов в файловой системе /proc.
 
-            root@pc-asarafanov-01:/etc/apt/sources.list.d# ps - Показывает список процессов в данном терминале.
+root@pc-asarafanov-01:/etc/apt/sources.list.d# ps - Показывает список процессов в данном терминале.
+
               PID TTY          TIME CMD
             14369 pts/0    00:00:00 sudo
             14370 pts/0    00:00:00 bash
             15601 pts/0    00:00:00 ps
 
 выводе присутствует четыре столбца:
-    PID: идентификационный номер процесса.
-    TTY: имя консоли, на которой пользователь выполнил вход.
-    TIME: количество времени центрального процессора, которое потребил процесс.
-    CMD: имя команды, которая запустила процесс
 
-      ps -e | less  - вывод всех процессов
+PID: идентификационный номер процесса.
+TTY: имя консоли, на которой пользователь выполнил вход.
+TIME: количество времени центрального процессора, которое потребил процесс.
+CMD: имя команды, которая запустила процесс
+
+ps -e | less  - вывод всех процессов
       
               PID TTY          TIME CMD
           1 ?        00:00:01 systemd
@@ -360,7 +362,7 @@ ps (processes status — статус процессов) — это встро�
          19 ?        00:00:00 idle_inject/1
  
 
-     ps -ef | less
+ps -ef | less
      
             UID        PID  PPID  C STIME TTY          TIME CMD
             root         1     0  0 10:55 ?        00:00:01 /sbin/init
@@ -376,26 +378,13 @@ ps (processes status — статус процессов) — это встро�
             root        13     2  0 10:55 ?        00:00:00 [ksoftirqd/0]
             root        14     2  0 10:55 ?        00:00:06 [rcu_sched]
             root        15     2  0 10:55 ?        00:00:00 [migration/0]
-            root        16     2  0 10:55 ?        00:00:00 [idle_inject/0]
-            root        17     2  0 10:55 ?        00:00:00 [cpuhp/0]
-            root        18     2  0 10:55 ?        00:00:00 [cpuhp/1]
-            root        19     2  0 10:55 ?        00:00:00 [idle_inject/1]
-            root        20     2  0 10:55 ?        00:00:00 [migration/1]
-            root        21     2  0 10:55 ?        00:00:00 [ksoftirqd/1]
-            root        23     2  0 10:55 ?        00:00:00 [kworker/1:0H-ev]
-            root        24     2  0 10:55 ?        00:00:00 [cpuhp/2]
-            root        25     2  0 10:55 ?        00:00:00 [idle_inject/2]
-            root        26     2  0 10:55 ?        00:00:00 [migration/2]
-            root        27     2  0 10:55 ?        00:00:00 [ksoftirqd/2]
-            root        29     2  0 10:55 ?        00:00:00 [kworker/2:0H-ev]
-            root        30     2  0 10:55 ?        00:00:00 [cpuhp/3]
 
  Добавлены следующие новые столбцы:
 
-    UID: идентификатор пользователя владельца этого процесса.
-    PPID: идентификатор родительского процесса.
-    C: Количество детей, которые есть у процесса.
-    STIME: Время начала. Время, когда процесс был запущен.
+UID: идентификатор пользователя владельца этого процесса.
+PPID: идентификатор родительского процесса.
+C: Количество детей, которые есть у процесса.
+STIME: Время начала. Время, когда процесс был запущен.
 
       ps aux | less
             USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
@@ -420,7 +409,30 @@ ps (processes status — статус процессов) — это встро�
             root        21  0.0  0.0      0     0 ?        S    10:55   0:00 [ksoftirqd/1]
             root        23  0.0  0.0      0     0 ?        I<   10:55   0:00 [kworker/1:0H-ev]
 
-    
+#### Утилита top
+
+            top - 21:00:27 up 10:04,  2 users,  load average: 0,11, 0,23, 0,24
+            Tasks: 334 total,   1 running, 213 sleeping,   0 stopped,   0 zombie
+            %Cpu(s):  0,4 us,  0,1 sy,  0,0 ni, 99,6 id,  0,0 wa,  0,0 hi,  0,0 si,  0,0 st
+            KiB Mem : 98873696 total, 92728704 free,  3516492 used,  2628508 buff/cache
+            KiB Swap: 78123008 total, 78123008 free,        0 used. 94239568 avail Mem 
+
+              PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                                                                                                                                                
+             2966 asarafa+  20   0 3477716 450248 146596 S   2,4  0,5  31:13.37 /usr/lib/firefox/firefox -contentproc -childID 5 -isForBrowser -prefsLen 7710 -prefMapSize 238381 -jsInit 285176 -parentBuildID 20210721174149 -appdir /usr/lib/firef+ 
+            11860 asarafa+  20   0 3049956 315912 177152 S   1,4  0,3   1:43.13 /usr/lib/firefox/firefox -contentproc -childID 19 -isForBrowser -prefsLen 8853 -prefMapSize 238381 -jsInit 285176 -parentBuildID 20210721174149 -appdir /usr/lib/fire+ 
+             2635 asarafa+  20   0 4269548 796440 332596 S   1,0  0,8  36:19.66 /usr/lib/firefox/firefox                                                                                                                                               
+             9334 asarafa+  20   0 3065412 267696 139176 S   1,0  0,3   4:46.83 /usr/lib/firefox/firefox -contentproc -childID 11 -isForBrowser -prefsLen 8853 -prefMapSize 238381 -jsInit 285176 -parentBuildID 20210721174149 -appdir /usr/lib/fire+ 
+             2735 asarafa+  20   0 3209292 319776 141980 S   0,7  0,3   2:21.15 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 102 -prefMapSize 238381 -jsInit 285176 -parentBuildID 20210721174149 -appdir /usr/lib/firefo+ 
+             2892 asarafa+  20   0 9534028 363884 159200 S   0,7  0,4   2:59.07 /usr/lib/firefox/firefox -contentproc -childID 4 -isForBrowser -prefsLen 5563 -prefMapSize 238381 -jsInit 285176 -parentBuildID 20210721174149 -appdir /usr/lib/firef+ 
+             9376 asarafa+  20   0 3257360 402956 146008 S   0,7  0,4   1:58.53 /usr/lib/firefox/firefox -contentproc -childID 12 -isForBrowser -prefsLen 8853 -prefMapSize 238381 -jsInit 285176 -parentBuildID 20210721174149 -appdir /usr/lib/fire+ 
+            15776 root      20   0   45508   4020   3228 R   0,7  0,0   0:00.02 top                                                                                                                                                                    
+             1269 fly-dm    20   0  468800 149608  88016 S   0,3  0,2   7:57.33 /usr/lib/xorg/Xorg -br -novtswitch -quiet -keeptty :0 vt7 -logfile /var/log/fly-dm/Xorg.%s.log -seat seat0 -auth /var/run/xauth/A:0-khC7ib                             
+             2273 asarafa+  20   0 20,671g 137900 101892 S   0,3  0,1   0:16.03 /opt/Mattermost/mattermost-desktop                                                                                                                                     
+             5446 asarafa+  20   0 5246540 267176 209520 S   0,3  0,3   0:43.52 /opt/kingsoft/wps-office/office6/wpsoffice /prometheus /home/asarafanov-adm/Desktops/Desktop1/?екции.xlsx                                                         
+             9047 asarafa+  20   0  556640  60504  51260 S   0,3  0,1   0:12.72 fly-term                                                                                                                                                               
+             9851 asarafa+  20   0 2905792 198848 129828 S   0,3  0,2   0:39.99 /usr/lib/firefox/firefox -contentproc -childID 17 -isForBrowser -prefsLen 8853 -prefMapSize 238381 -jsInit 285176 -parentBuildID 20210721174149 -appdir /usr/lib/fire+ 
+            10125 asarafa+  20   0 1267984 575060 236912 S   0,3  0,6   2:37.00 /opt/kingsoft/wps-office/office6/wps /wps /from_prome /prome-pipe-token=kprometheus.5446.5446.2018424845 /prome-prestart-type=0                                        
+                1 root      20   0  210436   8300   5976 S   0,0  0,0   0:01.22 /sbin/init 
 
 
 
