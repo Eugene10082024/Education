@@ -23,7 +23,7 @@
 
 Systemd – это система инициализации и системный менеджер
 
-![picture](pic/oracle_vb_01.png)
+![picture](dop_files/systemd_1.png)
 
 ### Инициализация процессов
 
