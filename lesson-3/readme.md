@@ -361,7 +361,7 @@ The time the unit takes to start is printed after the "+" character.
     
     Состояние zombie означает, что процесс мертв. Зомби-процесс существует в таблице процессов так же, как и любая другая запись процесса, но не занимает никаких ресурсов. Запись для зомби-процесса сохраняется до тех пор, пока родительский процесс не разрешит ему умереть. Зомби-процесс также называют неработающим процессом.
     
-[Основные системные процессы Linux](https://github.com/Aleksey-10081967/Education/tree/main/lesson-3/dop_files/list_sys_process.md)
+[Основные системные процессы Linux](https://github.com/Aleksey-10081967/Education/blob/main/lesson-3/dop_files/list_sys_process.md)
 
 #### Основные утилиты мониторинга процессов
 #### Утилита ps.
