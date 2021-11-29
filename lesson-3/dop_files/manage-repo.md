@@ -2,48 +2,48 @@
 
 Установить пакет:
 
-  yum install figlet 
+      yum install figlet 
 
 Удалить пакет:
 
-  yum remove figlet 
+      yum remove figlet 
 
 Переустановить пакет:
 
-  yum reinstall figlet 
+      yum reinstall figlet 
 
 Найти пакет в репозиториях:
 
-  yum search figlet 
+      yum search figlet 
 
 Отобразить информацию о пакете:
 
-  yum info figlet 
+      yum info figlet 
 
 Обновить установленные пакеты:
 
-  yum update 
+      yum update 
 
 Обновить конкретный установленный пакет:
 
-  yum update figlet 
+      yum update figlet 
 
 Обновить пакет до определенной версии:
 
-  yum update-to
+      yum update-to
 
 Показать историю:
 
-yum history 
+    yum history 
 
 Вывести список включенных репозиториев:
 
- yum repolist 
+    yum repolist 
 
 Найти пакет, который предоставляет файл (например, /usr/bin/figlet):
 
- yum provides "*bin/figlet" 
+     yum provides "*bin/figlet" 
 
 Очистить кэш:
 
- yum clean all
+    yum clean all
