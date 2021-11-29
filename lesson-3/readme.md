@@ -44,7 +44,7 @@ YUM - открытый консольный менеджер пакетов дл
         less google-chrome.list
         deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 
-[Основные команды менеджера yum](https://github.com/Aleksey-10081967/Education/tree/main/lesson-3/dop_files/manage_repo.md)
+[Основные команды менеджера yum](https://github.com/Aleksey-10081967/Education/blob/main/lesson-3/dop_files/manage-repo.md)
 
 
 ### Стандартные потоки ввода - вывода, конвeйр
