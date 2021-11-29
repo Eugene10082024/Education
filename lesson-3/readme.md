@@ -503,6 +503,8 @@ COMMAND — команда, запустившая процесс.
 #### Утилита htop
 ![picture](dop_files/htop.png)
 
+1
+
 
 
 
