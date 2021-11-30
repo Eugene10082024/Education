@@ -31,3 +31,4 @@
 
 [Основы компьютерных сетей. Тема №9. Маршрутизация: статическая и динамическая на примере RIP, OSPF и EIGRP] (https://habr.com/ru/post/335090/)
 
+[Как происходит передача данных в локальной сети (TCP/IP)] (https://litl-admin.ru/rabota-s-setyu/kak-proisxodit-peredacha-dannyx-v-lokalnoj-seti-tcpip.html)
