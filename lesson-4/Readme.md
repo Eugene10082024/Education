@@ -47,6 +47,9 @@
 
 Смешанная топология (англ. Hybrid Topology)
 
+#### 7 уровневая модель ISO
+
+![picture](dop_files/pic2.png)
 
 
 
