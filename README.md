@@ -8,4 +8,4 @@
 
 [Занятие 3. Пакетные менеджеры, стандартные потоки ввода - вывода,конвейер, регулярные выражения, загрузка ОС, Systemd, процессы  ](https://github.com/Aleksey-10081967/Education/tree/main/lesson-3)
 
-
+[Занятие 4. Основы сети  ](https://github.com/Aleksey-10081967/Education/tree/main/lesson-4)
