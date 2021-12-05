@@ -10,6 +10,8 @@
 
 [Занятие 4. Основы сети  ] (https://github.com/Aleksey-10081967/Education/tree/main/lesson-4)
 
+[Занятие 5. Установка и настройка prometheus] (https://github.com/Aleksey-10081967/Education/tree/main/lesson-5)
+
 [Дополнительные утилиты для работы с Linux] (https://github.com/Aleksey-10081967/Education/blob/main/dop_infa/utils.md)
 
 
