@@ -12,6 +12,6 @@
 
 
 
-[Литература] (https://github.com/Aleksey-10081967/Education/tree/main/lesson-4)
+[Литература] (https://github.com/Aleksey-10081967/Education/blob/main/dop_infa/lit.md)
 
 
