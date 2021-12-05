@@ -10,6 +10,7 @@
 
 [Занятие 4. Основы сети  ] (https://github.com/Aleksey-10081967/Education/tree/main/lesson-4)
 
+[Дополнительные утилиты для работы с Linux] (https://github.com/Aleksey-10081967/Education/blob/main/dop_infa/utils.md)
 
 
 [Литература] (https://github.com/Aleksey-10081967/Education/blob/main/dop_infa/lit.md)
