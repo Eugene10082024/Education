@@ -12,7 +12,7 @@
 
 [Занятие 5. Установка и настройка prometheus] (https://github.com/Aleksey-10081967/Education/tree/main/lesson-5)
 
-[Дополнительные утилиты для работы с Linux] (https://github.com/Aleksey-10081967/Education/blob/main/dop_infa/utils.md)
+[Дополнительные утилиты для работы с Linux] (https://github.com/Aleksey-10081967/Education/blob/main/dop_infa/utils0.md)
 
 
 [Литература] (https://github.com/Aleksey-10081967/Education/blob/main/dop_infa/lit.md)
