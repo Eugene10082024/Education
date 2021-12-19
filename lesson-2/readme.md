@@ -357,4 +357,6 @@ sudo - команда которая позволяет вам запускат�
             useradd, userdel, usermod, groupadd, groupdel, groupmod - низкоуровневные утилиты для работы с пользователями и группами
             
  [Создание пользователя с помощью утилиты useradd](https://github.com/Aleksey-10081967/Education/tree/main/lesson-2/work-users.md)
+ 
+  [ДЗ к занятию 2](https://github.com/Aleksey-10081967/Education/tree/main/lesson-2/dz-lesson-2.md)
             
