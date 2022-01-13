@@ -10,7 +10,6 @@
 
 [Занятие 5. Установка и настройка prometheus](https://github.com/Aleksey-10081967/Education/tree/main/lesson-5)
 
-[Занятие 6. Мониторинг операционной системы](https://github.com/Aleksey-10081967/Education/tree/main/lesson-6)
 
 [Дополнительные утилиты для работы с Linux](https://github.com/Aleksey-10081967/Education/blob/main/dop_infa/utils0.md)
 
